@@ -8,7 +8,7 @@ The vault forwards its deadline to the Soroswap router. The native mock used to 
 | An expired timestamp or the current timestamp | Rejected. The checked balances and position stay as they were. |
 | A future timestamp | Accepted. A withdrawal retried one second past the current timestamp closes the position. |
 
-The native mock now enforces the same boundary. The two Protocol 29 snapshots are from mainnet ledgers 65508083 (add) and 65508085 (withdraw). Funding and authorization are local to the test.
+The native mock now enforces the same boundary. The two Protocol 30 snapshots are from mainnet ledgers 65646127 (add) and 65646129 (withdraw). Funding and authorization are local to the test.
 
 [Read the Rust assertions](tests/deadline.rs#L111).
 
